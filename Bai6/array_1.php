@@ -1,49 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Nhập và tính toán trên dãy số</title>
-	<meta charset="utf-8">
-	<style>
-	*{
-    	font-family: Tahoma;
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
-	table{
-	    width: 400px;
-	    margin: 100px auto;
-	}
-	table th{
-	    background: #66CCFF;
-	    padding: 10px;
-	    font-size: 18px;
-	}
-	table {
-		border: 1px solid #111;
-		border-radius: 5px;
-	}
-	.title {
-		border-radius: 5px 5px 0 0;
-	}
-	input {
-		width: 100%;
-	}
-	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nhập và tính toán dãy số trên</title>
+	<link rel="stylesheet" href="./css/array_1.css">
 </head>
-
 <?php
 	if(isset($_POST['btn_goi'])){
-		$sum = 0;
-		$array_int = 0;
-		$array_int = explode(",", $_POST['nhap_mang']);
-		$n = count($array_int);
-		foreach($array_int as $i){
-			$sum += $i;
+		if($_POST['nhap_mang']) {
+			$sum = 0;
+			$array_int = 0;
+			$array_int = explode(",", $_POST['nhap_mang']);
+			$n = count($array_int);
+			foreach($array_int as $i){
+				$sum += $i;
+			}
+		} else {
+			$error_message = "Please enter the number";
 		}
 	}
 ?>
-
 <body>
 	<form method="POST" action="array_1.php">
 		<table>
@@ -63,11 +41,13 @@
 				</tr>
 				<tr>
 					<td>Tổng dãy số:</td>
-					<td><input type="text" name="ket_qua" disabled="disabled" value="<?php if(isset($sum)){echo htmlspecialchars($sum);}?>" ></td>
+					<td><input type="text" name="ket_qua" disabled="disabled" value="<?php if (isset($sum)) {echo htmlspecialchars($sum), $error_message;} else if(isset($error_message)) {echo $error_message;}?>" ></td>
 				</tr>
 			</tbody>
 		</table>
 	</form>
 </body>
 </html>
+
+
 

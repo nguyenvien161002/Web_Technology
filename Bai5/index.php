@@ -14,15 +14,25 @@
         if(is_numeric($a) && is_numeric($b) && is_numeric($c)) {
             function solveEquation($a, $b, $c) {
                 $delta = $b**2 - 4*$a*$c;
-                if($delta < 0) {
-                    return "Phương trình vô nghiệm";
-                } else if($delta == 0) { 
-                    $x1 = (-$b)/(2*$a);
-                    return "x1 = x2 = $x1";
-                } else if($delta > 0) {
-                    $x1 = (- $b + sqrt ( $delta )) / (2 * $a);
-                    $x2 = (- $b - sqrt ( $delta )) / (2 * $a);
-                    return "x1 = $x1, x2 = $x2";
+                if($a == 0) {
+                    if($b == 0) { 
+                        return "Phương trình vô số nghiệm";
+                    } else if ($b != 0 && $c != 0){
+                        return $x1 = -$b / $c;
+                    } else {
+                        return "x = 0";
+                    }
+                } else {
+                    if($delta < 0) {
+                        return "Phương trình vô nghiệm";
+                    } else if($delta == 0) { 
+                        $x1 = (-$b)/(2*$a);
+                        return "Phương trình có nghiệm kép là: x1 = x2 = $x1";
+                    } else if($delta > 0) {
+                        $x1 = (- $b + sqrt ( $delta )) / (2 * $a);
+                        $x2 = (- $b - sqrt ( $delta )) / (2 * $a);
+                        return "Phương trình có 2 nghiệm là: x1 = $x1 và x2 = $x2";
+                    }
                 }
             };
             $result = solveEquation($a, $b, $c);
@@ -37,7 +47,7 @@
 ?>
 <body>
     <form action="index.php" method="post">
-        <table width="806" border="1">
+        <table width="806" border="1" style="margin: 100px auto;">
             <tr>
                 <td colspan="4" bgcolor="#336699"><strong>Giải phương trình bậc 2</strong></td>
             </tr>

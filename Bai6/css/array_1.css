@@ -1,0 +1,25 @@
+*{
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    width: 400px;
+    margin: 100px auto;
+}
+table th{
+    background: #66CCFF;
+    padding: 10px;
+    font-size: 18px;
+}
+table {
+    border: 1px solid #111;
+    border-radius: 5px;
+}
+th[colspan="2"] {
+    border-radius: 5px 5px 0 0;
+}
+input {
+    width: 100%;
+}

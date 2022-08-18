@@ -28,8 +28,8 @@
     }
 ?>
 <body>
-    <form action="#" method="post">
-        <table width="728" border="1">
+    <form action="index.php" method="post">
+        <table width="728" border="1" style="margin: 100px auto;">
             <tr>
                 <td width="122">&nbsp;</td>
                 <td width="76">Số bắt đầu</td>
@@ -40,9 +40,6 @@
                 <td width="175"><label for="textfield2"></label>
                     <input type="text" name="so_cuoi" id="textfield2" value="<?php if(isset($_POST['so_cuoi'])) {echo $last_number;}?>" />
                 </td>
-            </tr>
-            <tr>
-                <p style="color: red;"><?php if(isset($error_message)) {echo $error_message;}?></p>
             </tr>
             <tr>
                 <td colspan="5">Kết quả
@@ -77,6 +74,7 @@
                 <td colspan="5"><input type="submit" name="button" id="button" value="Tính toán" /></td>
             </tr>
         </table>
+        <p style="color: red; margin-top: -80px; text-align: center;"><?php if(isset($error_message)) {echo $error_message;}?></p>
     </form>
 </body>
 </html>

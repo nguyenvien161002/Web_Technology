@@ -1,0 +1,38 @@
+[
+  {
+    "_id": {
+      "$oid": "632d75c9f76500001d006503"
+    },
+    "scode": "s04",
+    "sname": "bui hon lac",
+    "class": "xml05",
+    "age": "20"
+  },
+  {
+    "_id": {
+      "$oid": "632e6bf80a060000380073b4"
+    },
+    "scode": "12201",
+    "sname": "cao thi thap",
+    "class": "xml05",
+    "age": "22"
+  },
+  {
+    "_id": {
+      "$oid": "634534069d4000008e003bf6"
+    },
+    "scode": "123",
+    "sname": "bùi như lạc new",
+    "class": "web 4",
+    "age": "19"
+  },
+  {
+    "_id": {
+      "$oid": "634534ad9d4000008e003bf7"
+    },
+    "scode": "12345",
+    "sname": "le nhớ",
+    "class": "web 4",
+    "age": "20"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "_id": {
+      "$oid": "632d7e81f76500001d006506"
+    },
+    "ccode": "C01",
+    "ngay": "20-10-2017",
+    "cname": "Nguyễn Hữu Khoa",
+    "orderno": "01",
+    "items": {
+      "icode": "I01",
+      "iname": "Máy bay",
+      "qty": 2,
+      "price": 12
+    }
+  },
+  {
+    "_id": {
+      "$oid": "632d7e90f76500001d006507"
+    },
+    "ccode": "C01",
+    "ngay": "20-10-2017",
+    "cname": "Nguyễn Hữu Khoa",
+    "orderno": "01",
+    "items": {
+      "icode": "I01",
+      "iname": "Máy bay",
+      "qty": 2,
+      "price": 12
+    }
+  },
+  {
+    "_id": {
+      "$oid": "632e5e8d0a060000380073b3"
+    },
+    "ccode": "C01",
+    "ngay": "20-10-2017",
+    "cname": "Nguyễn Hữu Khoa",
+    "orderno": "01",
+    "items": {
+      "icode": "I01",
+      "iname": "Máy bay",
+      "qty": 2,
+      "price": 12
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "_id": {
+      "$oid": "632d2d62b6b61e29af09ac1e"
+    },
+    "user": "lequan",
+    "pass": "123456"
+  },
+  {
+    "_id": {
+      "$oid": "632e5e06d7596f9ed0c391e4"
+    },
+    "user": "lethe",
+    "pass": "123456"
+  }
+]
